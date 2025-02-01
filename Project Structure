@@ -1,0 +1,38 @@
+geometry_toolkit/
+├── .github/
+│   └── workflows/              # CI/CD (GitHub Actions)
+│       └── tests.yml
+├── docker/                     # Containerization
+│   └── Dockerfile
+├── docs/                       # Auto-generated documentation
+│   └── ...
+├── src/
+│   ├── geometry_toolkit/
+│   │   ├── core/               # Abstract base classes
+│   │   │   ├── __init__.py
+│   │   │   ├── shape.py        # Shape interface
+│   │   │   └── units.py        # Unit conversion engine
+│   │   ├── shapes/             # Concrete implementations
+│   │   │   ├── circle.py
+│   │   │   ├── sphere.py
+│   │   │   └── ...
+│   │   ├── engines/            # Calculation strategies
+│   │   │   ├── base_engine.py
+│   │   │   ├── numeric_engine.py
+│   │   │   └── symbolic_engine.py (SymPy)
+│   │   ├── config/             # Configuration management
+│   │   │   ├── __init__.py
+│   │   │   └── settings.py
+│   │   ├── exceptions.py       # Custom exceptions
+│   │   ├── cli.py              # CLI entrypoint (Click)
+│   │   └── __init__.py
+│   ├── tests/                  # pytest + Hypothesis
+│   │   ├── integration/
+│   │   └── unit/
+│   ├── setup.py
+│   └── pyproject.toml          # Modern packaging
+├── Makefile                    # Build automation
+├── .env                        # Environment variables
+└── requirements/
+    ├── dev.txt                 # Dev dependencies
+    └── prod.txt                # Prod dependencies
